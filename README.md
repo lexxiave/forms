@@ -1,10 +1,10 @@
 There's three sign-up forms want to embed into any page and option customize confirmation message at any time.  
 
-#Email Newsletter Signup Form
+1. Email Newsletter Signup Form
 
-#RSVP Form
+2. RSVP Form
 
-#VIP Table Registration Form
+3. VIP Table Registration Form
 
 #Requirements
 
