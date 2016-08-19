@@ -4,7 +4,7 @@ Want create different PHP forms embeddable into any page. Collect data in MySQL 
 
 #Requirements
 
-1. Each form to send submissions to a MySQL Database using PHP
+1. Each form submission sends to a MySQL Database using PHP
 
 2. Every submission forward emails submission alert to the administrator's and send subscriber email confirmation upon every submission
 
