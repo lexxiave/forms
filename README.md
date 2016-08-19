@@ -16,7 +16,7 @@ There's three sign-up forms want to embed into any page and option customize con
 
 4. Every form required field should validation except for adding guests to the list. That's subscribers optional not necessarily required field. 
 
-Preview -- http://jotfreeform.netlify.com/
+Preview -- http://jotfreeform.netlify.com/forms.html
 
 
 
