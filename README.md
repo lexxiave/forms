@@ -8,7 +8,7 @@ Want create different PHP forms embeddable into any page. Collect data in MySQL 
 
 2. Every submission should forward an email confirmation to the subscribers and an email alert to the administrator.
 
-3. Option customizes the form confirmation message. 
+3. The option to customize the email confirmation message.
 
 4. Every form required field validation except for adding guests optional not necessary required field
 
