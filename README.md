@@ -12,6 +12,8 @@ Want create different PHP forms embeddable into any page. Collect data in MySQL 
 
 4. Every form required field validation except for adding guests optional not necessary required field
 
+Preview -- http://jotfreeform.netlify.com/
+
 
 
 
