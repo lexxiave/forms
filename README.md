@@ -1,6 +1,10 @@
-# Bootstrap PHP Forms
+There's three sign-up forms want to embed into any page and option customize confirmation message at any time.  
 
-Want create different PHP forms embeddable into any page. Collect data in MySQL database and also send subscriber email confirmation upon every submission also send admin's email submission alert. 
+#Email Newsletter Signup Form
+
+#RSVP Form
+
+#VIP Table Registration Form
 
 #Requirements
 
