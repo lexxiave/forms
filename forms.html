@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +15,10 @@
   {
     margin-top: 10px;
   }
-
   .glyphicon
   {
     font-size: 12px;
   }
-
   h2.subscribetitle {
     font-family: "Arial Black", Gadget, sans-serif;
     font-weight: 500;
@@ -28,7 +27,6 @@
     text-transform: uppercase;
     font-style: italic;
   }
-
    h4.eventformtitle {
     font-family: "Arial Black", Gadget, sans-serif;
     font-weight: 500;
@@ -40,19 +38,16 @@
     font-size: 1.5em;
     font-style: italic;
   }
-
   h5.subscribetext {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
     text-align: center;
   }
-
   p.alert-message {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     text-align: left;
   }
-
   .btn-font {
     font-family: "Arial Black", Gadget, sans-serif;
     font-weight: 500;
@@ -68,11 +63,9 @@
     $(document).on('click', '.btn-add', function(e)
     {
       e.preventDefault();
-
       var controlForm = $('.controls form:first'),
       currentEntry = $(this).parents('.entry:first'),
       newEntry = $(currentEntry.clone()).appendTo(controlForm);
-
       newEntry.find('input').val('');
       controlForm.find('.entry:not(:last) .btn-add')
       .removeClass('btn-add').addClass('btn-remove')
@@ -81,13 +74,10 @@
     }).on('click', '.btn-remove', function(e)
     {
       $(this).parents('.entry:first').remove();
-
       e.preventDefault();
       return false;
     });
   });
-
-
   </script>
 
   <script type="text/javascript">
@@ -327,7 +317,7 @@
         <div class="radio">
           <label for="radios-0">
             <input type="radio" name="radios" id="radios-0" value="1">
-            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            $150 Birthday Special incl. tip + gratuity.  1 Champagne Bottle + 25 Wing Platter + 1 Hookah ($60 DEPOSIT)   Reserved Section seats 6 VIP Guests Unlimited Guestlist til 12am + Shout Outs from the DJ!
           </label>
         </div>
 
@@ -335,17 +325,10 @@
         <div class="radio">
           <label for="radios-0">
             <input type="radio" name="radios" id="radios-0" value="1">
-            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            $400 VIP Party Upgrade Package incl. tip + gratuity.  1 Premium Bottle (Ciroc, Hennessy or Grey Goose) + 1 Complimentary Bottle of Champagne  ($100 DEPOSIT)  Reserved Section for 10 VIP Guests Unlimited Guestlist til 12am + Shout Outs from the DJ!
           </label>
         </div>
 
-
-        <div class="radio">
-          <label for="radios-0">
-            <input type="radio" name="radios" id="radios-0" value="1">
-            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </label>
-        </div>
 
       </div>   <!-- form-group -->
 
@@ -391,4 +374,6 @@
 
 </body>
 </html>
+
+   
 
