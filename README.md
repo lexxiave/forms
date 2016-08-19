@@ -10,7 +10,7 @@ Want create different PHP forms embeddable into any page. Collect data in MySQL 
 
 3. The option to customize the email confirmation message.
 
-4. Every form required field validation except for adding guests optional not necessary required field
+4. Every form required field should validation except for adding guests to the list. That's subscribers optional not necessarily required field. 
 
 Preview -- http://jotfreeform.netlify.com/
 
