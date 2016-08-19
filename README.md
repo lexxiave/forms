@@ -6,7 +6,7 @@ Want create different PHP forms embeddable into any page. Collect data in MySQL 
 
 1. Each form submission sends to a MySQL Database using PHP
 
-2. Every submission forward emails submission alert to the administrator's and send subscriber email confirmation upon every submission
+2. Every submission should forward an email confirmation to the subscribers and an email alert to the administrator.
 
 3. Option customizes the form confirmation message. 
 
