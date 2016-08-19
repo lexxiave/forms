@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+  .entry:not(:first-of-type)
+  {
+    margin-top: 10px;
+  }
+
+  .glyphicon
+  {
+    font-size: 12px;
+  }
+
+  h2.subscribetitle {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+   h4.eventformtitle {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+  }
+  h4.alert-title {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+
+  h5.subscribetext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  p.alert-message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: left;
+  }
+
+  .btn-font {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  </style>
+
+  <script>
+  $(function()
+  {
+    $(document).on('click', '.btn-add', function(e)
+    {
+      e.preventDefault();
+
+      var controlForm = $('.controls form:first'),
+      currentEntry = $(this).parents('.entry:first'),
+      newEntry = $(currentEntry.clone()).appendTo(controlForm);
+
+      newEntry.find('input').val('');
+      controlForm.find('.entry:not(:last) .btn-add')
+      .removeClass('btn-add').addClass('btn-remove')
+      .removeClass('btn-success').addClass('btn-danger')
+      .html('<span class="glyphicon glyphicon-minus"></span>');
+    }).on('click', '.btn-remove', function(e)
+    {
+      $(this).parents('.entry:first').remove();
+
+      e.preventDefault();
+      return false;
+    });
+  });
+
+
+  </script>
+
+  <script type="text/javascript">
+  $(function () {
+    $('#datetimepicker1').datetimepicker();
+  });
+  </script>
+
+</head>
+<body>
+
+
+   <br clear="all" /> <br />
+
+  <!-- Email Newsletter Subscription Form -->
+  
+  <div class="container">
+    <div class="row">
+
+     <div class="col-lg-5">
+
+       <h2 class="subscribetitle">SIGN UP NOW</h2>
+
+       <h5 class="subscribetext">Subscribe to our mailing list and receive alerts for more upcoming events in your email inbox.</h5>
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <center> <button id="button1id" name="button1id" class="btn btn-danger btn-lg btn-font">Subscribe</button> </center>
+      </div>
+      <!-- Button -->
+
+    </div>  <!-- col-lg-5 -->
+  </div>  <!-- row -->
+</div>   <!-- container -->
+
+
+  <!-- Email Newsletter Subscription Form -->
+
+  <br clear="all" /> <br />
+  <br clear="all" /> <br />
+
+  <!-- Email Newsletter Confirmation Message -->
+  
+  <div class="container">
+    <div class="row">
+
+       <div class="col-lg-5">
+       
+        <div class="alert" role="alert">
+           <h4 class="alert-title">Thank You</h4>
+             <p class="alert-message">Voluptua molestiae complectitur mea an, semper dignissim his eu. Ei nec adhuc nusquam salutandi, scripta vulputate qui ut.</p>
+       </div>
+
+       </div>  <!-- col-lg-5 --> 
+ 
+  </div>  <!-- row -->
+</div>   <!-- container -->
+
+
+ <!-- Email Newsletter Confirmation Message -->
+
+  <br clear="all" /> <br />
+
+  <br clear="all" /> <br />
+
+  <!-- Event Name Guest List -->
+  
+  <div class="container">
+    <div class="row">
+
+     <div class="col-lg-5">
+
+       <h4 class="eventformtitle">Event Name Guest List</h4>
+       <br clear="all" /> 
+
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+      </div>
+
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
+      </div>
+
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+      </div>
+
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Confirm Email Address">
+      </div>
+
+
+
+      <!--  Dynamic Form Fields - Add & Remove     -->
+      <div class="control-group" id="fields">
+       
+        <label class="control-label" for="field1"><h4>Add Guest (s) <span class="glyphicon glyphicon-plus gs"></span> <small> unlimited number of guests to the list</small></h4></label>
+
+        <div class="controls"> 
+          <form role="form" autocomplete="off">
+            <div class="entry input-group">
+              <input class="form-control" name="fields[]" type="text" placeholder="Type something" />
+              <span class="input-group-btn">
+                <button class="btn btn-success btn-add" type="button">
+                  <span class="glyphicon glyphicon-plus"></span>
+                </button>
+              </span>
+            </div>
+          </form>
+          <br>
+        </div>
+      </div>
+      <!--   Dynamic Form Fields - Add & Remove  -->
+
+
+       <!-- Button -->
+      <div class="form-group">
+        <center> <button id="button1id" name="button1id" class="btn btn-success">Subscribe</button> </center>
+      </div>
+      <!-- Button -->
+
+
+    </div>  <!-- col-lg-6 -->
+  </div>  <!-- row -->
+</div>   <!-- container -->
+
+<br clear="all" /> <br />
+
+<br clear="all" /> <br />
+  <!-- Event Name Guest List Confirmation Message -->
+  
+  <div class="container">
+    <div class="row">
+
+       <div class="col-lg-5">
+       
+        <div class="alert" role="alert">
+           <h4 class="alert-title">Thank You</h4>
+             <p class="alert-message">Voluptua molestiae complectitur mea an, semper dignissim his eu. Ei nec adhuc nusquam salutandi, scripta vulputate qui ut.</p>
+       </div>
+
+       </div>  <!-- col-lg-5 --> 
+ 
+  </div>  <!-- row -->
+</div>   <!-- container -->
+
+
+  <!-- Event Name Guest List Confirmation Message -->
+
+
+  <br clear="all" /> <br />
+
+  <!-- Event Name Guest List -->
+
+
+  <br clear="all" /> <br />
+
+
+  <!-- Book Your VIP Reservation Registration -->
+
+  <div class="container">
+    <div class="row">
+
+     <div class="col-lg-5">
+
+       <h4 class="eventformtitle">Book Your VIP Reservation</h4>
+       <br clear="all" /> 
+
+
+       <!-- Bootstrap Datepicker Enabled/Disabled Dates -->
+       <div class="form-group">
+        <div class='input-group date' id='datetimepicker1'>
+          <input type='text' class="form-control" placeholder="08/11/2016" />
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Bootstrap Datepicker Enabled/Disabled Dates -->
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+      </div>
+
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
+      </div>
+
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+      </div>
+
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Contact Number">
+      </div>
+
+
+
+      <!--  Dynamic Form Fields - Add & Remove     -->
+      <div class="control-group" id="fields">
+
+        <label class="control-label" for="field1"><h4>Add Guest (s) <span class="glyphicon glyphicon-plus gs"></span> <small> unlimited number of guests to the list</small></h4></label>
+
+        <div class="controls"> 
+          <form role="form" autocomplete="off">
+            <div class="entry input-group">
+              <input class="form-control" name="fields[]" type="text" placeholder="Type something" />
+              <span class="input-group-btn">
+                <button class="btn btn-success btn-add" type="button">
+                  <span class="glyphicon glyphicon-plus"></span>
+                </button>
+              </span>
+            </div>
+          </form>
+          <br>
+        </div>
+      </div>
+      <!--   Dynamic Form Fields - Add & Remove  -->
+
+
+      <div class="form-group">
+        <label class="control-label" for="radios"><h4>Select VIP Package (s)</h4></label>
+
+
+        <div class="radio">
+          <label for="radios-0">
+            <input type="radio" name="radios" id="radios-0" value="1">
+            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </label>
+        </div>
+
+
+        <div class="radio">
+          <label for="radios-0">
+            <input type="radio" name="radios" id="radios-0" value="1">
+            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </label>
+        </div>
+
+
+        <div class="radio">
+          <label for="radios-0">
+            <input type="radio" name="radios" id="radios-0" value="1">
+            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </label>
+        </div>
+
+      </div>   <!-- form-group -->
+
+      <!-- Button -->
+      <div class="form-group">
+        <center> <button id="button1id" name="button1id" class="btn btn-success">Subscribe</button> </center>
+      </div>
+      <!-- Button -->
+
+
+    </div>  <!-- col-lg-6 -->
+  </div>  <!-- row -->
+</div>   <!-- container -->
+
+ <!-- Book Your VIP Reservation Registration -->
+
+<br clear="all" /> <br />
+<br clear="all" /> <br />
+
+  <!-- Book Your VIP Reservation Confirmation Message -->
+  
+  <div class="container">
+    <div class="row">
+
+       <div class="col-lg-5">
+       
+        <div class="alert" role="alert">
+           <h4 class="alert-title">Thank You</h4>
+             <p class="alert-message">Voluptua molestiae complectitur mea an, semper dignissim his eu. Ei nec adhuc nusquam salutandi, scripta vulputate qui ut.</p>
+       </div>
+
+       </div>  <!-- col-lg-5 --> 
+ 
+  </div>  <!-- row -->
+</div>   <!-- container -->
+
+
+  <!-- Book Your VIP Reservation Confirmation Message -->
+
+
+  <br clear="all" /> <br />
+
+
+</body>
+</html>
+
