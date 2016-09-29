@@ -1,4 +1,4 @@
-There's three sign-up forms want to embed into any page and option customize confirmation message at any time.  
+Their three sign-up forms want to finish building with option edit auto-response confirmation and email confirmation messages.  
 
 1. Email Newsletter Signup Form
 
@@ -8,13 +8,15 @@ There's three sign-up forms want to embed into any page and option customize con
 
 #Requirements
 
-1. Each form submission sends to a MySQL Database using PHP
+1. Need help in finish connecting PHP form submits the form to MySQL Database also send form submissions to POP3 and IMAP email accounts (e.g. Gmail, Yahoo, Outlook, etc.) simultaneously
 
-2. Every submission should forward an email confirmation to the subscribers and an email alert to the administrator.
+2. Edit PHP forms, auto-response confirmation, and electronic mail confirmation messages.
 
-3. The option to customize the email confirmation message.
+3. All input fields will require except for the add guests' feature, not a mandatory field.
 
-4. Every form required field should validation except for adding guests to the list. That's subscribers optional not necessarily required field. 
+4. Every form submission sent to designated admin POP3 and IMAP email account (e.g. joe.smith@gmail.com) to moderate all form submissions.
+
+5. Subscribers' submission will get automatically email confirmation after every submits.
 
 Preview -- http://jotfreeform.netlify.com/forms.html
 
