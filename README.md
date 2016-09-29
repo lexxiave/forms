@@ -20,6 +20,10 @@ Their three sign-up forms want to finish building with option edit auto-response
 
 Preview -- http://jotfreeform.netlify.com/forms.html
 
+#FAQ
 
+* These going to be three individual PHP forms connect three different databases.
+
+* The example in the PDF demo of a spreadsheet illustrates how the table's columns would look in MySQL database. 
 
 
